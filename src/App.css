@@ -8,6 +8,18 @@
   pointer-events: none;
 }
 
+.pause {
+  animation: App-logo-spin infinite 20s alternate-reverse;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.work {
+  animation: App-logo-spin infinite 600ms linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,6 +36,15 @@
 }
 
 @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-work {
   from {
     transform: rotate(0deg);
   }
